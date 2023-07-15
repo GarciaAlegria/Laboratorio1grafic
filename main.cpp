@@ -38,6 +38,20 @@ void render(Framebuffer &framebuffer)
     framebuffer.polygon(p1, white);
     framebuffer.fillPolygon(p1, yellow);
 
+    // Definir polígono 2
+    std::vector<Vertex> p2 = {
+        {321, 335},
+        {288, 286},
+        {339, 251},
+        {374, 302}
+    };
+
+  
+
+    // Dibujar polígono 2 con color azul y borde blanco
+    framebuffer.polygon(p2, white);
+    framebuffer.fillPolygon(p2, blue);
+
     // Renderizar búfer de fotogramas
     framebuffer.renderBuffer();
 }
