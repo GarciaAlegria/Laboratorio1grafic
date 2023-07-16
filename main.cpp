@@ -51,6 +51,14 @@ void render(Framebuffer &framebuffer)
     // Dibujar polígono 2 con color azul y borde blanco
     framebuffer.polygon(p2, white);
     framebuffer.fillPolygon(p2, blue);
+    //Figura 3 triangulo rojo
+    std::vector<Vertex> p3 = {
+        {377, 249},
+        {411, 197},
+        {436, 249}};
+
+    framebuffer.polygon(p3, white);
+    framebuffer.fillPolygon(p3, red);
 
     // Renderizar búfer de fotogramas
     framebuffer.renderBuffer();
